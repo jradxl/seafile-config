@@ -1,0 +1,17 @@
+[Unit]
+Description=Custom Seafile1
+After= network.target mysql.service
+PartOf=seahub1.service
+
+[Service]
+Type=forking
+User=seafile1
+Group=seafile1
+WorkingDirectory=/opt/seafile1/seafile-server-latest
+#ExecStartPre= CANNOT BE USED
+ExecStart=/opt/seafile1/seafile-server-latest/seafile.sh start
+#ExecStop=/opt/seafile1/seafile-server-latest/seafile.sh stop
+
+[Install]
+WantedBy=multi-user.target
+

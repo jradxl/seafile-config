@@ -1,0 +1,17 @@
+[Unit]
+Description=Custom Seahub1
+Requires=seafile1.service
+After= network.target mysql.service seafile1.service
+
+[Service]
+Type=forking
+User=seafile1
+Group=seafile1
+WorkingDirectory=/opt/seafile1/seafile-server-latest
+ExecStart=/opt/seafile1/seafile-server-latest/seahub.sh start
+#ExecStop= NOT NEEDED
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
