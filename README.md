@@ -3,7 +3,7 @@ Seafile configuration, behind Haproxy and Nginx
 
 My home network is behind NAT and I use dyndns to provide a doman name, XXXX.dyndns.org, where XXXX is of course a placeholder.
 
-I use Haproxy to be the end-point for a LetsEncrypt certificate, and forward the services I want to other local servers on and internal network.
+I use Haproxy to be the end-point for a LetsEncrypt certificate, and forward the services I want to other local servers on an internal network.
 
 I use  301 redirects from http to https, and from XXXX.dyndns.org www.XXXX.dyndns.org
 
