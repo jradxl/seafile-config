@@ -1,2 +1,2 @@
-# seafile-config
-Seafile config behind Haproxy and Nginx
+# Seafile Configuration
+Seafile configuration, behind Haproxy and Nginx
